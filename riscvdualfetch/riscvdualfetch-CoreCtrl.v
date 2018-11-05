@@ -110,8 +110,8 @@ module riscv_CoreCtrl
   // PC Mux Select
 
   assign pc_mux_sel_Phl
-    = bubble_next_Phl_reg ? pm_p
-    : brj_taken_X0hl      ? pm_b
+    //= bubble_next_Phl_reg ? pm_p
+    = brj_taken_X0hl      ? pm_b
     : brj_taken_Dhl       ? pc_mux_sel_Dhl
     :                       pm_p;
 
@@ -1127,7 +1127,8 @@ module riscv_CoreCtrl
    ||   bge_taken_X0hl
    ||   bgeu_taken_X0hl );
 
-  wire brj_taken_X0hl = bubble_next_Phl_reg ? 0 : ( inst_val_X0hl && any_br_taken_X0hl );
+  //wire brj_taken_X0hl = bubble_next_Phl_reg ? 0 : ( inst_val_X0hl && any_br_taken_X0hl );
+  wire brj_taken_X0hl = ( inst_val_X0hl && any_br_taken_X0hl );
 
   // Dummy Squash Signal
 
