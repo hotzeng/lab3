@@ -1,0 +1,1129 @@
+1c1
+< WARNING: ../riscvstall/riscvstall-sim.v:154: $readmemh: Standard inconsistency, following 1364-2005.
+---
+> WARNING: ../riscvdualfetch/riscvdualfetch-sim.v:183: $readmemh: Standard inconsistency, following 1364-2005.
+2a3,11
+> 00080004: 00100193:  addi   r03, r00, 00000001
+> 00080000: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=xxxxxxxx r03=00000001 r04=xxxxxxxx r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+4c13,14
+< r00=xxxxxxxx r01=xxxxxxxx r02=00000000 r03=xxxxxxxx r04=xxxxxxxx r05=xxxxxxxx
+---
+> 00080004: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000000 r03=00000001 r04=xxxxxxxx r05=xxxxxxxx
+11a22
+> 00080000: 00000000:      undefined inst       
+19a31
+> 0008000c: 00000000:      undefined inst       
+27c39,40
+< 0008001c: fe314ce3:  blt    r02, r03, fffffff8
+---
+> 0008000c: 00d00e93:  addi   r29, r00, 0000000d
+> 00080008: 00000000:      undefined inst       
+32c45,54
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000d
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 00080010: 2a0e9663:  bne    r29, r00, 000002ac
+> 00080014: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000000 r03=00000001 r04=xxxxxxxx r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000d
+35a58
+> 00080010: 00000000:      undefined inst       
+40c63
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000d
+43a67
+> 0008001c: 00000000:      undefined inst       
+48c72,99
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000d
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 0008001c: fe314ce3:  blt    r02, r03, fffffff8
+> 00080018: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000000 r03=00000001 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000d
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 00080014: 00100213:  addi   r04, r00, 00000001
+> 00080018: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000000 r03=00000001 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000d
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 00080018: 00401863:  bne    r00, r04, 00000010
+> 00080014: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000000 r03=00000001 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000d
+51a103
+> 0008002c: 00000000:      undefined inst       
+56c108
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000d
+59a112
+> 00080028: 00000000:      undefined inst       
+64c117
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000d
+67a121
+> 00080034: 00000000:      undefined inst       
+72c126,162
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000d
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 00080034: 00e00e93:  addi   r29, r00, 0000000e
+> 00080030: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=ffffffff r03=00000000 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000e
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 00080038: 280e9263:  bne    r29, r00, 00000284
+> 0008003c: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=ffffffff r03=00000000 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000e
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 0008003c: 00100213:  addi   r04, r00, 00000001
+> 00080038: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=ffffffff r03=00000000 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000e
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 00080040: 00401863:  bne    r00, r04, 00000010
+> 00080044: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=ffffffff r03=00000000 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000e
+75a166
+> 00080040: 00000000:      undefined inst       
+80c171
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000e
+83a175
+> 00080040: 00000000:      undefined inst       
+88c180
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000e
+91a184
+> 0008003c: 00000000:      undefined inst       
+96c189
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000e
+99a193
+> 00080054: 00000000:      undefined inst       
+104c198
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000e
+107a202
+> 00080050: 00000000:      undefined inst       
+112c207
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000e
+115a211
+> 0008005c: 00000000:      undefined inst       
+120c216,252
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000e
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 0008005c: 00f00e93:  addi   r29, r00, 0000000f
+> 00080058: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=ffffffff r03=00000001 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000f
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 00080060: 240e9e63:  bne    r29, r00, 0000025c
+> 00080064: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=ffffffff r03=00000001 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000f
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 00080064: 00100213:  addi   r04, r00, 00000001
+> 00080060: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=ffffffff r03=00000001 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000f
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 00080068: 00401863:  bne    r00, r04, 00000010
+> 0008006c: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=ffffffff r03=00000001 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000f
+123a256
+> 00080068: 00000000:      undefined inst       
+128c261
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000f
+131a265
+> 00080068: 00000000:      undefined inst       
+136c270
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000f
+139a274
+> 00080064: 00000000:      undefined inst       
+144c279
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000f
+147a283
+> 0008007c: 00000000:      undefined inst       
+152c288
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000f
+155a292
+> 00080078: 00000000:      undefined inst       
+160c297
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000f
+163a301
+> 00080084: 00000000:      undefined inst       
+168c306
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000f
+171a310
+> 00080080: 00000000:      undefined inst       
+176c315
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000f
+179a319
+> 0008008c: 00000000:      undefined inst       
+184c324,342
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000000f
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 0008008c: 01100e93:  addi   r29, r00, 00000011
+> 00080088: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000000 r03=00000000 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000011
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 00080090: 220e9663:  bne    r29, r00, 0000022c
+> 00080094: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000000 r03=00000000 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000011
+187a346
+> 00080090: 00000000:      undefined inst       
+192c351
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000011
+195a355
+> 0008009c: 00000000:      undefined inst       
+200c360
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000011
+203a364
+> 00080098: 00000000:      undefined inst       
+208c369
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000011
+211a373
+> 000800a4: 00000000:      undefined inst       
+216c378
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000011
+219a382
+> 000800a0: 00000000:      undefined inst       
+224c387
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000011
+227a391
+> 000800ac: 00000000:      undefined inst       
+232c396,414
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000011
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 000800ac: 01200e93:  addi   r29, r00, 00000012
+> 000800a8: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000000 r03=ffffffff r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000012
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 000800b0: 200e9663:  bne    r29, r00, 0000020c
+> 000800b4: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000000 r03=ffffffff r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000012
+235a418
+> 000800b0: 00000000:      undefined inst       
+240c423
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000012
+243a427
+> 000800bc: 00000000:      undefined inst       
+248c432
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000012
+251a436
+> 000800b8: 00000000:      undefined inst       
+256c441
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000012
+259a445
+> 000800c4: 00000000:      undefined inst       
+264c450
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000012
+267a454
+> 000800c0: 00000000:      undefined inst       
+272c459
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000012
+275a463
+> 000800cc: 00000000:      undefined inst       
+280c468,486
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000012
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 000800cc: 01300e93:  addi   r29, r00, 00000013
+> 000800c8: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000001 r03=00000000 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000013
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 000800d0: 1e0e9663:  bne    r29, r00, 000001ec
+> 000800d4: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000001 r03=00000000 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000013
+283a490
+> 000800d0: 00000000:      undefined inst       
+288c495
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000013
+291a499
+> 000800dc: 00000000:      undefined inst       
+296c504
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000013
+299a508
+> 000800d8: 00000000:      undefined inst       
+304c513
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000013
+307a517
+> 000800e4: 00000000:      undefined inst       
+312c522
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000013
+315a526
+> 000800e0: 00000000:      undefined inst       
+320c531
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000013
+323a535
+> 000800ec: 00000000:      undefined inst       
+328c540,558
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000013
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 000800ec: 01400e93:  addi   r29, r00, 00000014
+> 000800e8: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000001 r03=ffffffff r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000014
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 000800f0: 1c0e9663:  bne    r29, r00, 000001cc
+> 000800f4: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000001 r03=ffffffff r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000014
+331a562
+> 000800f0: 00000000:      undefined inst       
+336c567
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000014
+339a571
+> 000800fc: 00000000:      undefined inst       
+344c576
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000014
+347a580
+> 000800f8: 00000000:      undefined inst       
+352c585
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000014
+355a589
+> 00080104: 00000000:      undefined inst       
+360c594
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000014
+363a598
+> 00080100: 00000000:      undefined inst       
+368c603
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000014
+371a607
+> 0008010c: 00000000:      undefined inst       
+376c612,630
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000014
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 0008010c: 01a00e93:  addi   r29, r00, 0000001a
+> 00080108: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000000 r03=00000000 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001a
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 00080110: 1a0e9663:  bne    r29, r00, 000001ac
+> 00080114: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000000 r03=00000000 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001a
+379a634
+> 00080110: 00000000:      undefined inst       
+384c639
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001a
+387a643
+> 0008011c: 00000000:      undefined inst       
+392c648
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001a
+395a652
+> 00080118: 00000000:      undefined inst       
+400c657
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001a
+403a661
+> 00080124: 00000000:      undefined inst       
+408c666
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001a
+411a670
+> 00080120: 00000000:      undefined inst       
+416c675
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001a
+419a679
+> 0008012c: 00000000:      undefined inst       
+424c684,702
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001a
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 0008012c: 01b00e93:  addi   r29, r00, 0000001b
+> 00080128: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000000 r03=00000000 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001b
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 00080130: 180e9663:  bne    r29, r00, 0000018c
+> 00080134: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000000 r03=00000000 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001b
+427a706
+> 00080130: 00000000:      undefined inst       
+432c711
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001b
+435a715
+> 0008013c: 00000000:      undefined inst       
+440c720
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001b
+443a724
+> 00080138: 00000000:      undefined inst       
+448c729
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001b
+451a733
+> 00080144: 00000000:      undefined inst       
+456c738
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001b
+459a742
+> 00080140: 00000000:      undefined inst       
+464c747
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001b
+467a751
+> 0008014c: 00000000:      undefined inst       
+472c756
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001b
+475a760
+> 00080148: 00000000:      undefined inst       
+480c765
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001b
+483a769
+> 0008015c: 00000000:      undefined inst       
+488c774
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001b
+491a778
+> 00080158: 00000000:      undefined inst       
+496c783
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001b
+499a787
+> 00080164: 00000000:      undefined inst       
+504c792
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001b
+507a796
+> 00080160: 00000000:      undefined inst       
+512c801
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001b
+515a805
+> 0008016c: 00000000:      undefined inst       
+520c810
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001b
+523a814
+> 00080168: 00000000:      undefined inst       
+528c819
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001b
+531a823
+> 0008017c: 00000000:      undefined inst       
+536c828
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001b
+539a832
+> 00080178: 00000000:      undefined inst       
+544c837
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001b
+547a841
+> 00080184: 00000000:      undefined inst       
+552c846
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001b
+555a850
+> 00080180: 00000000:      undefined inst       
+560c855
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001b
+563a859
+> 0008018c: 00000000:      undefined inst       
+568c864
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001b
+571a868
+> 00080188: 00000000:      undefined inst       
+576c873
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001b
+579a877
+> 00080194: 00000000:      undefined inst       
+584c882,900
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001b
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 00080194: 01e00e93:  addi   r29, r00, 0000001e
+> 00080190: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000000 r03=00000000 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001e
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 00080198: 120e9263:  bne    r29, r00, 00000124
+> 0008019c: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000000 r03=00000000 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001e
+587a904
+> 00080198: 00000000:      undefined inst       
+592c909
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001e
+595a913
+> 000801a4: 00000000:      undefined inst       
+600c918
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001e
+603a922
+> 000801a0: 00000000:      undefined inst       
+608c927
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001e
+611a931
+> 000801ac: 00000000:      undefined inst       
+616c936
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001e
+619a940
+> 000801a8: 00000000:      undefined inst       
+624c945
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001e
+627a949
+> 000801b4: 00000000:      undefined inst       
+632c954
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001e
+635a958
+> 000801b0: 00000000:      undefined inst       
+640c963
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001e
+643a967
+> 000801c4: 00000000:      undefined inst       
+648c972
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001e
+651a976
+> 000801c0: 00000000:      undefined inst       
+656c981
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001e
+659a985
+> 000801cc: 00000000:      undefined inst       
+664c990
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001e
+667a994
+> 000801c8: 00000000:      undefined inst       
+672c999
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001e
+675a1003
+> 000801d4: 00000000:      undefined inst       
+680c1008,1026
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=0000001e
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 000801d4: 02100e93:  addi   r29, r00, 00000021
+> 000801d0: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000000 r03=00000000 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000021
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 000801d8: 0e0e9263:  bne    r29, r00, 000000e4
+> 000801dc: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000000 r03=00000000 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000021
+683a1030
+> 000801d8: 00000000:      undefined inst       
+688c1035
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000021
+691a1039
+> 000801e4: 00000000:      undefined inst       
+696c1044
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000021
+699a1048
+> 000801e0: 00000000:      undefined inst       
+704c1053
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000021
+707a1057
+> 000801ec: 00000000:      undefined inst       
+712c1062
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000021
+715a1066
+> 000801e8: 00000000:      undefined inst       
+720c1071
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000021
+723a1075
+> 000801f4: 00000000:      undefined inst       
+728c1080,1098
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000021
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 000801f4: 02200e93:  addi   r29, r00, 00000022
+> 000801f0: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000000 r03=00000000 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000022
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 000801f8: 0c0e9263:  bne    r29, r00, 000000c4
+> 000801fc: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000000 r03=00000000 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000022
+731a1102
+> 000801f8: 00000000:      undefined inst       
+736c1107
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000022
+739a1111
+> 00080204: 00000000:      undefined inst       
+744c1116
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000022
+747a1120
+> 00080200: 00000000:      undefined inst       
+752c1125
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000022
+755a1129
+> 0008020c: 00000000:      undefined inst       
+760c1134
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000022
+763a1138
+> 00080208: 00000000:      undefined inst       
+768c1143
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000022
+771a1147
+> 00080214: 00000000:      undefined inst       
+776c1152
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000022
+779a1156
+> 00080210: 00000000:      undefined inst       
+784c1161
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000022
+787a1165
+> 00080224: 00000000:      undefined inst       
+792c1170
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000022
+795a1174
+> 00080220: 00000000:      undefined inst       
+800c1179
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000022
+803a1183
+> 0008022c: 00000000:      undefined inst       
+808c1188
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000022
+811a1192
+> 00080228: 00000000:      undefined inst       
+816c1197
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000022
+819a1201
+> 00080234: 00000000:      undefined inst       
+824c1206
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000022
+827a1210
+> 00080230: 00000000:      undefined inst       
+832c1215
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000022
+835a1219
+> 00080244: 00000000:      undefined inst       
+840c1224
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000022
+843a1228
+> 00080240: 00000000:      undefined inst       
+848c1233
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000022
+851a1237
+> 0008024c: 00000000:      undefined inst       
+856c1242
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000022
+859a1246
+> 00080248: 00000000:      undefined inst       
+864c1251
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000022
+867a1255
+> 00080254: 00000000:      undefined inst       
+872c1260
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000022
+875a1264
+> 00080250: 00000000:      undefined inst       
+880c1269
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000022
+883a1273
+> 0008025c: 00000000:      undefined inst       
+888c1278,1296
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000022
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 0008025c: 02500e93:  addi   r29, r00, 00000025
+> 00080258: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000000 r03=00000000 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000025
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 00080260: 040e9e63:  bne    r29, r00, 0000005c
+> 00080264: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000000 r03=00000000 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000025
+891a1300
+> 00080260: 00000000:      undefined inst       
+896c1305
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000025
+899a1309
+> 0008026c: 00000000:      undefined inst       
+904c1314
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000025
+907a1318
+> 00080268: 00000000:      undefined inst       
+912c1323
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000025
+915a1327
+> 00080274: 00000000:      undefined inst       
+920c1332
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000025
+923a1336
+> 00080270: 00000000:      undefined inst       
+928c1341
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000025
+931a1345
+> 0008027c: 00000000:      undefined inst       
+936c1350
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000025
+939a1354
+> 00080278: 00000000:      undefined inst       
+944c1359
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000025
+947a1363
+> 0008028c: 00000000:      undefined inst       
+952c1368
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000025
+955a1372
+> 00080288: 00000000:      undefined inst       
+960c1377
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000025
+963a1381
+> 00080294: 00000000:      undefined inst       
+968c1386
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000025
+971c1389,1390
+< 000802a4: 00110113:  addi   r02, r02, 00000001
+---
+> 00080294: 00110113:  addi   r02, r02, 00000001
+> 00080290: 00000000:      undefined inst       
+976c1395
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000025
+979c1398,1399
+< 000802a8: 00110113:  addi   r02, r02, 00000001
+---
+> 00080298: 00110113:  addi   r02, r02, 00000001
+> 0008029c: 00000000:      undefined inst       
+984c1404
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=xxxxxxxx
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000025
+987,988c1407,1409
+< 000802ac: 03500e93:  addi   r29, r00, 00000035
+< r00=xxxxxxxx r01=xxxxxxxx r02=00000001 r03=00000001 r04=00000001 r05=xxxxxxxx
+---
+> 0008029c: 00110113:  addi   r02, r02, 00000001
+> 00080298: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000002 r03=00000001 r04=00000001 r05=xxxxxxxx
+992c1413
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000035
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000025
+995,996c1416,1445
+< 000802b0: 00100093:  addi   r01, r00, 00000001
+< r00=xxxxxxxx r01=00000001 r02=00000001 r03=00000001 r04=00000001 r05=xxxxxxxx
+---
+> 000802a0: 00110113:  addi   r02, r02, 00000001
+> 000802a4: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000003 r03=00000001 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000025
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 000802a4: 00110113:  addi   r02, r02, 00000001
+> 000802a0: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000004 r03=00000001 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000025
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 000802a8: 00110113:  addi   r02, r02, 00000001
+> 000802ac: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000005 r03=00000001 r04=00000001 r05=xxxxxxxx
+> r06=xxxxxxxx r07=xxxxxxxx r08=xxxxxxxx r09=xxxxxxxx r10=xxxxxxxx r11=xxxxxxxx
+> r12=xxxxxxxx r13=xxxxxxxx r14=xxxxxxxx r15=xxxxxxxx r16=xxxxxxxx r17=xxxxxxxx
+> r18=xxxxxxxx r19=xxxxxxxx r20=xxxxxxxx r21=xxxxxxxx r22=xxxxxxxx r23=xxxxxxxx
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000025
+> r30=xxxxxxxx r31=xxxxxxxx
+> -----
+> 000802ac: 03500e93:  addi   r29, r00, 00000035
+> 000802a8: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=xxxxxxxx r02=00000005 r03=00000001 r04=00000001 r05=xxxxxxxx
+1003,1004c1452,1454
+< 000802b4: 00111463:  bne    r02, r01, 00000008
+< r00=xxxxxxxx r01=00000001 r02=00000001 r03=00000001 r04=00000001 r05=xxxxxxxx
+---
+> 000802b0: 00100093:  addi   r01, r00, 00000001
+> 000802b4: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=00000001 r02=00000005 r03=00000001 r04=00000001 r05=xxxxxxxx
+1011,1012c1461,1463
+< 000802b8: 00100e93:  addi   r29, r00, 00000001
+< r00=xxxxxxxx r01=00000001 r02=00000001 r03=00000001 r04=00000001 r05=xxxxxxxx
+---
+> 000802b4: 00111463:  bne    r02, r01, 00000008
+> 000802b0: 00000000:      undefined inst       
+> r00=xxxxxxxx r01=00000001 r02=00000005 r03=00000001 r04=00000001 r05=xxxxxxxx
+1016c1467
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000001
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000035
+1019a1471
+> 000802c0: 00000000:      undefined inst       
+1024c1476
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000001
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000035
+1027c1479
+< *** PASSED ***
+---
+> *** FAILED *** (status =         53)
+1031,1034c1483,1486
+<  status     =          1
+<  num_cycles =        302
+<  num_inst   =        130
+<  ipc        = 0.430464
+---
+>  status     =         53
+>  num_cycles =        197
+>  num_inst   =        170
+>  ipc        = 0.862944
+1035a1488
+> 000802bc: 00000000:      undefined inst       
+1040c1493
+< r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000001
+---
+> r24=xxxxxxxx r25=xxxxxxxx r26=xxxxxxxx r27=xxxxxxxx r28=xxxxxxxx r29=00000035

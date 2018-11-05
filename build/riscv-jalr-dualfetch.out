@@ -1,0 +1,10 @@
+WARNING: ../riscvdualfetch/riscvdualfetch-sim.v:183: $readmemh: Standard inconsistency, following 1364-2005.
+VCD info: dumpfile ../tests/build/vmh/riscv-jalr.vcd opened for output.
+*** FAILED *** (status =         42)
+--------------------------------------------
+ STATS                                      
+--------------------------------------------
+ status     =         42
+ num_cycles =         33
+ num_inst   =         28
+ ipc        = 0.848485
